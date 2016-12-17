@@ -1,0 +1,133 @@
+
+header{
+    flex-direction:row;
+}
+
+    header, section, footer{
+    flex: 1 100%;
+    flex-wrap: wrap;
+}
+section{
+display: -webkit-flex; 
+-webkit-justify-content: flex-start;
+height: 1000px;
+}
+#absolute{
+         position: absolute;
+         top: 5px;
+         left: 45%;
+         height: 30px;
+         width:100px;
+         text-align: center;
+         background-color:#8FBC8F;
+}
+#absolute2{
+         position: fixed;
+         bottom: 5px;
+         left: 45%;
+         height: 30px;
+         width:100px;
+         text-align: center;
+         background-color:#8FBC8F;
+}
+
+.pic1>img:hover {
+  -webkit-transform: scale(2);
+  -ms-ransform: scale(2);
+  transform: scale(2);
+  transition: 1s;
+}
+
+.pic1>img{
+    width: 60px;
+	height: 60px;
+}
+
+.conteiner{
+  width: 1200px;
+ height: 100%;
+}
+.mn{
+background-color:#ADD8E6;
+padding-bottom:5px;
+}
+.menu1>li{
+ display: inline-block;
+}
+ul{
+ list-style-type: none;
+
+}
+.menu1>li{
+    margin-left:50px;
+}
+
+.p{
+background-color:#D2691E;
+}
+
+.menu2>li{
+margin:0px 10px 20px 0px;
+}
+.block1{
+  
+    background: #FFFACD;
+    
+    width: 20%;
+}
+
+.block2{
+  
+    background: #FFFACD;
+    width: 70%;
+   margin-left:10px;
+   padding:0px 10px 0px 10px;
+
+}
+
+div{
+    background-color:#FFFACD;
+}
+
+
+@keyframes slidein{
+    from{
+        right: 60px;
+    }
+    to{
+        right: 100px;
+    }
+}
+
+.pic2>img{
+    width: 60px;
+	height: 60px;
+	position: absolute;
+animation:slidein 2s infinite;
+}
+
+
+
+footer{
+    display : inline-block;
+    width: 100%; 
+    background-color:#ADD8E6;
+    }
+
+@media (min-width:800px) and (max-width: 1200px) {
+    .container{
+        width: 800px;
+    }
+    .menu1>li{
+    margin-left:20px;
+}
+   
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    header > div > ul > li {
+        padding-left: 30px;
+    }
+   
+}
